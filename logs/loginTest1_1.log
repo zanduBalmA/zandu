@@ -1,0 +1,710 @@
+13:43:30,864 INFO [main] MyLogger - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+13:43:30,889 INFO [main] MyLogger - Test.newTest:loginTest1 13==>  Test1
+[INFO ] 2023-03-28 16:08:57.446 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-03-28 16:08:57.474 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-02 16:31:49.169 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-02 16:31:49.209 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-02 16:40:47.923 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-02 16:40:47.971 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 07:58:16.619 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 07:58:16.686 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 08:50:02.975 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 08:50:03.013 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 08:52:39.098 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 08:52:39.129 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 08:56:24.853 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 08:56:24.881 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 08:58:08.998 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 08:58:09.037 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 09:01:31.270 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 09:01:31.307 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 09:04:40.932 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 09:04:40.964 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 10:55:23.850 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 10:55:23.931 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 11:11:59.530 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 11:11:59.565 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 11:54:20.387 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 11:54:20.441 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 12:20:48.945 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 12:20:48.980 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 16:26:03.624 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 16:26:03.696 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-03 16:27:03.179 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-03 16:27:03.241 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-24 16:41:09.996 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-24 16:41:10.037 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-24 16:42:19.015 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-24 16:42:19.064 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-24 16:43:48.123 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-24 16:43:48.163 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-04-24 16:45:01.203 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-04-24 16:45:01.244 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 09:55:35.612 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 09:55:35.714 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 09:57:24.986 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 09:57:25.020 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 10:46:36.859 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 10:46:36.899 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 11:03:03.818 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 11:03:03.858 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 11:45:54.323 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 11:45:54.376 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 11:56:52.449 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 11:56:52.468 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 12:04:07.844 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 12:04:07.864 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 12:07:50.773 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 12:07:50.790 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 12:09:31.333 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 12:09:31.372 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 12:22:43.238 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 12:22:43.288 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-09 12:24:00.457 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-09 12:24:00.476 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-10 12:13:35.608 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 12:13:35.692 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-10 12:18:28.536 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 12:18:28.569 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-10 12:22:23.995 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 12:22:24.037 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-10 12:25:25.239 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 12:25:25.286 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-10 12:25:25.260 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 12:25:25.321 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-10 12:30:29.556 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 12:30:29.879 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-10 12:35:27.395 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 12:35:27.440 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-10 12:55:50.070 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 12:55:50.085 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-10 13:05:39.767 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 13:05:39.807 - Test.newTest:loginTest1 15==>  Test1
+[INFO ] 2023-05-10 16:59:33.293 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 16:59:33.394 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-10 17:16:48.829 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 17:16:48.869 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-10 17:26:03.311 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 17:26:03.336 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-10 17:45:19.189 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 17:45:19.276 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-10 18:32:35.280 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 18:32:35.608 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-10 18:57:43.226 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 18:57:43.335 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-10 19:16:15.874 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-10 19:16:15.953 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-11 11:12:59.412 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-11 11:12:59.516 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-11 11:27:10.619 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-11 11:27:10.719 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-11 12:12:03.888 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-11 12:12:03.948 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-12 17:33:53.196 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-12 17:33:53.246 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-12 17:35:11.861 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-12 17:35:11.890 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-12 22:21:46.579 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-12 22:21:46.743 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-12 22:22:58.414 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-12 22:22:58.480 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-12 22:29:00.376 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-12 22:29:00.421 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-12 22:34:39.236 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-12 22:34:39.282 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-12 22:48:59.331 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-12 22:48:59.377 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-13 16:00:46.194 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-13 16:00:46.206 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-13 16:07:07.988 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-13 16:07:08.035 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-13 16:17:31.303 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-13 16:17:31.369 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-13 16:25:52.867 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-13 16:25:52.980 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-13 16:30:25.375 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-13 16:30:25.482 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-13 16:41:36.043 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-13 16:41:36.085 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-13 16:47:49.246 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-13 16:47:49.264 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-14 11:50:55.770 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-14 11:50:55.832 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-14 12:12:07.326 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-14 12:12:07.414 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-14 12:27:23.589 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-14 12:27:23.634 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-14 12:34:22.034 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-14 12:34:22.073 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-14 12:36:24.847 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-14 12:36:24.890 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-14 12:40:03.511 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-14 12:40:03.556 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-14 12:43:43.932 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-14 12:43:43.993 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-14 14:13:57.969 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-14 14:13:58.050 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-14 14:22:26.646 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-14 14:22:26.704 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2023-05-16 12:15:12.708 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2023-05-16 12:15:12.854 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-25 15:27:15.262 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-25 15:27:15.337 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-25 15:29:46.986 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-25 15:29:47.026 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-25 15:32:24.777 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-25 15:32:24.822 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-25 15:52:11.092 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-25 15:52:11.105 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-25 15:55:00.377 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-25 15:55:00.405 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-25 15:57:56.691 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-25 15:57:56.705 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-25 15:59:54.746 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-25 15:59:54.770 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-25 16:00:08.033 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-25 16:00:08.034 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-26 11:28:44.481 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-26 11:28:44.500 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-26 17:47:54.235 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-26 17:47:54.258 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-26 17:54:13.794 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-26 17:54:13.804 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-26 17:58:08.546 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-26 17:58:08.624 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-26 18:01:59.599 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-26 18:01:59.672 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-26 18:04:48.647 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-26 18:04:48.705 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-26 18:10:54.594 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-26 18:10:54.642 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-26 18:13:32.763 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-26 18:13:32.830 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-26 18:33:26.889 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-26 18:33:26.938 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2024-12-26 18:35:43.376 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2024-12-26 18:35:43.434 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-04 13:50:13.675 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-04 13:50:13.694 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-04 13:52:29.150 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-04 13:52:29.182 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-04 14:29:43.516 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-04 14:29:43.548 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-04 14:33:33.487 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-04 14:33:33.492 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-04 14:37:30.643 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-04 14:37:30.653 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-04 14:40:43.924 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-04 14:40:43.934 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-04 14:41:38.669 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-04 14:41:38.676 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-04 14:46:32.870 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-04 14:46:32.885 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 16:51:36.159 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 16:51:36.238 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 16:59:50.272 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 16:59:50.281 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 22:48:35.869 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 22:48:35.913 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 23:22:27.528 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 23:22:27.536 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 23:28:25.132 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 23:28:25.149 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 23:29:30.427 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 23:29:30.445 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 23:33:47.322 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 23:33:47.328 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 23:36:35.872 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 23:36:35.885 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 23:38:30.388 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 23:38:30.396 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 23:39:27.688 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 23:39:27.716 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 23:45:07.645 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 23:45:07.651 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 23:56:45.694 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 23:56:45.737 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-05 23:57:48.046 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-05 23:57:48.089 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 00:04:33.236 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 00:04:33.252 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 00:05:41.048 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 00:05:41.081 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 00:07:23.427 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 00:07:23.478 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 00:08:54.252 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 00:08:54.309 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 00:15:28.222 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 00:15:28.231 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 00:23:55.629 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 00:23:55.665 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 12:58:31.075 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 12:58:31.164 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 13:02:26.967 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 13:02:26.990 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 13:08:59.688 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 13:08:59.695 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 13:12:04.892 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 13:12:05.267 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 18:05:54.106 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 18:05:54.207 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 18:08:33.868 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 18:08:33.931 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 18:27:10.905 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 18:27:11.018 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 18:28:53.048 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 18:28:53.154 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 18:32:42.512 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 18:32:42.642 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 18:38:19.688 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 18:38:19.796 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 18:49:01.184 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 18:49:01.314 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 18:53:03.611 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 18:53:03.761 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 18:56:04.162 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 18:56:04.321 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-06 19:09:46.537 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-06 19:09:46.624 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-07 13:41:00.793 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-07 13:41:00.877 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-07 13:48:16.150 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-07 13:48:16.285 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-07 14:13:31.115 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-07 14:13:31.153 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-18 18:13:47.108 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-18 18:13:47.239 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-18 18:17:37.902 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-18 18:17:38.015 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-18 18:20:26.783 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-18 18:20:26.917 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-18 18:26:55.751 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-18 18:26:55.813 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-03-18 18:28:59.732 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-03-18 18:28:59.741 - Test.newTest:loginTest1 16==>  Test1
