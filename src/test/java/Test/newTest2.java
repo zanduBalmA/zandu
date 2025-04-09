@@ -49,4 +49,70 @@ public class newTest2 extends TestBase {
 		loginpage.ragisterNewUserS(getData(dat,"name"),getData(dat,"lastname"),getData(dat,"add"),getData(dat,"cityname"),getData(dat,"statename"),getData(dat,"code"),getData(dat,"number"),getData(dat,"ssncode"),getData(dat,"uname"),getData(dat,"pass"),getData(dat,"cpassword"));
 	
 	}
+	
+	
+	@Test(retryAnalyzer = ListenersImplementation.class)
+	@Parameters({ "testcaseid" })
+	public void loginTest5(String testcaseid) throws Throwable {
+	    try {
+	        System.out.println("five  test case");
+	        setTestCaseId(testcaseid);
+	        dat = getDetails(testcaseid);
+	        MyLogger.startTestCase(new Throwable().getStackTrace()[0].getMethodName());
+	        MyLogger.info("Test5");
+	        
+	        Loginpage loginpage = new Loginpage(DriverFactory.getInstance().getDriver());
+	        loginpage.ragisterNewUserS(
+	            getData(dat, "name"),
+	            getData(dat, "lastname"),
+	            getData(dat, "add"),
+	            getData(dat, "cityname"),
+	            getData(dat, "statename"),
+	            getData(dat, "code"),
+	            getData(dat, "number"),
+	            getData(dat, "ssncode"),
+	            getData(dat, "uname"),
+	            getData(dat, "pass"),
+	            getData(dat, "cpassword")
+	        );
+
+	        ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:Green'>Test Case: loginTest5 Passed</span></b>");
+	    } catch (Exception e) {
+	        ExtentFactory.getInstance().getExtent().log(Status.FAIL, "<b><span style='color:red'>Test Case: loginTest5 Failed. Exception: " + e.getMessage() + "</span></b>");
+	        ActionEngine.logEventInfoToReportForTestSteps(driver, "Fail", testcaseid);
+	    }
+	}
+
+	@Test(retryAnalyzer = ListenersImplementation.class)
+	@Parameters({ "testcaseid" })
+	public void loginTest6(String testcaseid) throws Throwable {
+	    try {
+	        System.out.println("six test case");
+	        setTestCaseId(testcaseid);
+	        dat = getDetails(testcaseid);
+	        MyLogger.startTestCase(new Throwable().getStackTrace()[0].getMethodName());
+	        MyLogger.info("Test6");
+
+	        Loginpage loginpage = new Loginpage(DriverFactory.getInstance().getDriver());
+	        loginpage.ragisterNewUserS(
+	            getData(dat, "name"),
+	            getData(dat, "lastname"),
+	            getData(dat, "add"),
+	            getData(dat, "cityname"),
+	            getData(dat, "statename"),
+	            getData(dat, "code"),
+	            getData(dat, "number"),
+	            getData(dat, "ssncode"),
+	            getData(dat, "uname"),
+	            getData(dat, "pass"),
+	            getData(dat, "cpassword")
+	        );
+
+	        ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:Green'>Test Case: loginTest2 Passed</span></b>");
+	    } catch (Exception e) {
+	        ExtentFactory.getInstance().getExtent().log(Status.FAIL, "<b><span style='color:red'>Test Case: loginTest2 Failed. Exception: " + e.getMessage() + "</span></b>");
+	        ActionEngine.logEventInfoToReportForTestSteps(driver, "Fail", testcaseid);
+	    }
+	}
+
 }

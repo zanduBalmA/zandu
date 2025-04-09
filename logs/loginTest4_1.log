@@ -653,3 +653,33 @@
 ************** Execution Started : loginTest4**************
 
 [INFO ] 2025-03-18 18:29:12.125 - Test.newTest2:loginTest4 47==>  Test4
+[INFO ] 2025-04-08 16:49:03.789 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-08 16:49:03.849 - Test.newTest2:loginTest4 47==>  Test4
+[INFO ] 2025-04-08 16:50:55.197 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-08 16:50:55.208 - Test.newTest2:loginTest4 47==>  Test4
+[INFO ] 2025-04-09 14:37:21.662 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-09 14:37:21.707 - Test.newTest2:loginTest4 47==>  Test4
+[INFO ] 2025-04-09 15:01:12.760 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-09 15:01:12.838 - Test.newTest2:loginTest4 47==>  Test4
+[INFO ] 2025-04-09 15:04:19.833 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-09 15:04:19.845 - Test.newTest2:loginTest4 47==>  Test4
+[INFO ] 2025-04-09 15:17:37.252 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-09 15:17:37.259 - Test.newTest2:loginTest4 47==>  Test4

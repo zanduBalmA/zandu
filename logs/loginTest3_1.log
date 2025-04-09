@@ -723,3 +723,33 @@
 ************** Execution Started : loginTest3**************
 
 [INFO ] 2025-03-18 18:28:59.731 - Test.newTest2:loginTest3 26==>  Test3
+[INFO ] 2025-04-08 16:48:50.892 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-08 16:48:50.926 - Test.newTest2:loginTest3 26==>  Test3
+[INFO ] 2025-04-08 16:50:42.637 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-08 16:50:42.682 - Test.newTest2:loginTest3 26==>  Test3
+[INFO ] 2025-04-09 14:37:07.435 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-09 14:37:07.485 - Test.newTest2:loginTest3 26==>  Test3
+[INFO ] 2025-04-09 15:00:59.782 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-09 15:00:59.867 - Test.newTest2:loginTest3 26==>  Test3
+[INFO ] 2025-04-09 15:04:07.997 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-09 15:04:08.039 - Test.newTest2:loginTest3 26==>  Test3
+[INFO ] 2025-04-09 15:17:23.915 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-09 15:17:23.962 - Test.newTest2:loginTest3 26==>  Test3

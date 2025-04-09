@@ -1,0 +1,15 @@
+[INFO ] 2025-04-09 15:01:28.341 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest6**************
+
+[INFO ] 2025-04-09 15:01:28.347 - Test.newTest2:loginTest6 94==>  Test6
+[INFO ] 2025-04-09 15:04:31.782 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest6**************
+
+[INFO ] 2025-04-09 15:04:31.789 - Test.newTest2:loginTest6 94==>  Test6
+[INFO ] 2025-04-09 15:17:56.837 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest6**************
+
+[INFO ] 2025-04-09 15:17:56.850 - Test.newTest2:loginTest6 94==>  Test6

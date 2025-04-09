@@ -14,6 +14,12 @@
 					<include name="loginTest4">
 						<parameter name="testcaseid" value="4" />
 					</include>
+					<include name="loginTest5">
+						<parameter name="testcaseid" value="5" />
+					</include>
+					<include name="loginTest6">
+						<parameter name="testcaseid" value="6" />
+					</include>
 				</methods>
 			</class>
 			<class name="Test.newTest">

@@ -708,3 +708,33 @@
 ************** Execution Started : loginTest1**************
 
 [INFO ] 2025-03-18 18:28:59.741 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-04-08 16:48:50.788 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-04-08 16:48:50.891 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-04-08 16:50:42.686 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-04-08 16:50:42.698 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-04-09 14:37:06.945 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-04-09 14:37:07.433 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-04-09 15:00:59.679 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-04-09 15:00:59.782 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-04-09 15:04:08.040 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-04-09 15:04:08.053 - Test.newTest:loginTest1 16==>  Test1
+[INFO ] 2025-04-09 15:17:23.964 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-04-09 15:17:23.972 - Test.newTest:loginTest1 16==>  Test1
