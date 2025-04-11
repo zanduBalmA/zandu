@@ -161,7 +161,7 @@ public class Loginpage extends ActionEngine {
 					"Welcome " + uName + " Your account was created successfully. You are now logged in.",
 					getText_custom(message__sucess, "sucessful Registeration"), "sucess message");
 			// Your account was created successfully. You are now logged in.
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:MidnightBlue'></span></b>");
+			ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:Blue'></span></b>");
 		} catch (Exception e) {
 			// log failure in extent
 			// logEventToReport(DriverFactory.getInstance().getDriver(), "FAIL", "<b><span
@@ -205,7 +205,7 @@ public class Loginpage extends ActionEngine {
 					"Welcome " + uName + " Your account was created successfully. You are now logged in.",
 					getText_custom(message__sucess, "sucessful Registeration"), "sucess message");
 			// Your account was created successfully. You are now logged in.
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:MidnightBlue'></span></b>");
+			ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:Blue'></span></b>");
 		} catch (Exception e) {
 			// log failure in extent
 			// logEventToReport(DriverFactory.getInstance().getDriver(), "FAIL", "<b><span

@@ -1,115 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-09T15:17:14 IST" name="Suite" finished-at="2025-04-09T15:18:02 IST" duration-ms="47738">
+  <suite started-at="2025-04-11T16:42:36 IST" name="Suite" finished-at="2025-04-11T16:42:51 IST" duration-ms="15160">
     <groups>
     </groups>
-    <test started-at="2025-04-09T15:17:14 IST" name="Test" finished-at="2025-04-09T15:18:02 IST" duration-ms="47738">
+    <test started-at="2025-04-11T16:42:36 IST" name="Test" finished-at="2025-04-11T16:42:51 IST" duration-ms="15160">
       <class name="Test.newTest">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Test.newTest@424e1977]" started-at="2025-04-09T15:17:15 IST" name="LaunchApplication" finished-at="2025-04-09T15:17:23 IST" duration-ms="8218" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Test.newTest@c0c2f8d]" started-at="2025-04-11T16:42:37 IST" name="LaunchApplication" finished-at="2025-04-11T16:42:44 IST" duration-ms="7762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginTest1()[pri:0, instance:Test.newTest@424e1977]" started-at="2025-04-09T15:17:23 IST" name="loginTest1" finished-at="2025-04-09T15:17:30 IST" duration-ms="6824" status="PASS">
+        <test-method signature="loginTest1()[pri:0, instance:Test.newTest@c0c2f8d]" started-at="2025-04-11T16:42:44 IST" name="loginTest1" finished-at="2025-04-11T16:42:51 IST" duration-ms="6295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.newTest@424e1977]" started-at="2025-04-09T15:17:30 IST" name="tearDown" finished-at="2025-04-09T15:17:32 IST" duration-ms="2206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Test.newTest@424e1977]" started-at="2025-04-09T15:17:32 IST" name="LaunchApplication" finished-at="2025-04-09T15:17:37 IST" duration-ms="4919" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginTest2()[pri:0, instance:Test.newTest@424e1977]" started-at="2025-04-09T15:17:37 IST" name="loginTest2" finished-at="2025-04-09T15:17:42 IST" duration-ms="4817" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.newTest@424e1977]" started-at="2025-04-09T15:17:42 IST" name="tearDown" finished-at="2025-04-09T15:17:42 IST" duration-ms="327" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.newTest@c0c2f8d]" started-at="2025-04-11T16:42:51 IST" name="tearDown" finished-at="2025-04-11T16:42:51 IST" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.newTest -->
-      <class name="Test.newTest2">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:15 IST" name="LaunchApplication" finished-at="2025-04-09T15:17:22 IST" duration-ms="7510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginTest3(java.lang.String)[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:22 IST" name="loginTest3" finished-at="2025-04-09T15:17:29 IST" duration-ms="7043" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:30 IST" name="tearDown" finished-at="2025-04-09T15:17:30 IST" duration-ms="577" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:30 IST" name="LaunchApplication" finished-at="2025-04-09T15:17:37 IST" duration-ms="6540" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginTest4(java.lang.String)[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:37 IST" name="loginTest4" finished-at="2025-04-09T15:17:42 IST" duration-ms="5699" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest4 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:43 IST" name="tearDown" finished-at="2025-04-09T15:17:43 IST" duration-ms="196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:43 IST" name="LaunchApplication" finished-at="2025-04-09T15:17:47 IST" duration-ms="4596" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginTest5(java.lang.String)[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:47 IST" name="loginTest5" finished-at="2025-04-09T15:17:52 IST" duration-ms="4483" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest5 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:52 IST" name="tearDown" finished-at="2025-04-09T15:17:52 IST" duration-ms="173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:52 IST" name="LaunchApplication" finished-at="2025-04-09T15:17:56 IST" duration-ms="4129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchApplication -->
-        <test-method signature="loginTest6(java.lang.String)[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:17:56 IST" name="loginTest6" finished-at="2025-04-09T15:18:02 IST" duration-ms="5307" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest6 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.newTest2@158a8276]" started-at="2025-04-09T15:18:02 IST" name="tearDown" finished-at="2025-04-09T15:18:02 IST" duration-ms="193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Test.newTest2 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

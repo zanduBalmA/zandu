@@ -6,14 +6,12 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="Test.newTest2">
+			<class name="Test.newTest">
 				<methods>
-					<include name="loginTest3">
-						<parameter name="testcaseid" value="3" />
+					<include name="loginTest1">
+						<parameter name="testcaseid" value="1" />
 					</include>
-					<include name="loginTest4">
-						<parameter name="testcaseid" value="4" />
-					</include>
+					
 				</methods>
 			</class>
 			
