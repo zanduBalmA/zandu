@@ -688,3 +688,28 @@
 ************** Execution Started : loginTest4**************
 
 [INFO ] 2025-04-11 16:23:18.393 - Test.newTest2:loginTest4 47==>  Test4
+[INFO ] 2025-04-14 16:15:40.573 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-14 16:15:40.583 - Test.newTest2:loginTest4 47==>  Test4
+[INFO ] 2025-04-14 16:30:09.801 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-14 16:30:09.810 - Test.newTest2:loginTest4 68==>  Test4
+[INFO ] 2025-04-14 16:52:30.465 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-14 16:52:30.472 - Test.newTest2:loginTest4 68==>  Test4
+[INFO ] 2025-04-14 17:17:36.622 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-14 17:17:36.628 - Test.newTest2:loginTest4 61==>  loginTest4 - Starting user registration
+[INFO ] 2025-04-14 17:43:18.006 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest4**************
+
+[INFO ] 2025-04-14 17:43:18.025 - Test.newTest2:loginTest4 61==>  loginTest4 - Starting user registration

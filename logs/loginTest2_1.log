@@ -734,3 +734,35 @@
 ************** Execution Started : loginTest2**************
 
 [INFO ] 2025-04-11 16:23:20.060 - Test.newTest:loginTest2 26==>  Test2
+[INFO ] 2025-04-14 16:15:39.619 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest2**************
+
+[INFO ] 2025-04-14 16:15:39.626 - Test.newTest:loginTest2 26==>  Test2
+[INFO ] 2025-04-14 16:30:09.750 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest2**************
+
+[INFO ] 2025-04-14 16:30:09.764 - Test.newTest:loginTest2 29==>  Test2
+[INFO ] 2025-04-14 16:52:32.453 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest2**************
+
+[INFO ] 2025-04-14 16:52:32.463 - Test.newTest:loginTest2 29==>  Test2
+[INFO ] 2025-04-14 17:17:51.697 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest2**************
+
+[INFO ] 2025-04-14 17:17:51.709 - Test.newTest:loginTest2 51==>  loginTest2 - Starting registration with user: Prash
+[INFO ] 2025-04-14 17:17:58.525 - Test.newTest:loginTest2 63==>  loginTest2 - User registration completed for: Prash
+[INFO ] 2025-04-14 17:18:03.697 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest2**************
+
+[INFO ] 2025-04-14 17:18:03.698 - Test.newTest:loginTest2 51==>  loginTest2 - Starting registration with user: Prash
+[INFO ] 2025-04-14 17:18:09.052 - Test.newTest:loginTest2 63==>  loginTest2 - User registration completed for: Prash
+[INFO ] 2025-04-14 17:43:19.019 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest2**************
+
+[INFO ] 2025-04-14 17:43:25.660 - Test.newTest:loginTest2 52==>  loginTest2 - User registration completed for: Prash

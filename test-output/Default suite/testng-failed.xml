@@ -3,33 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pageObject.BaseClass">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.pageObject.BaseClass -->
       <class name="Test.newTest2">
         <methods>
           <include name="tearDown"/>
           <include name="loginTest3"/>
           <include name="LaunchApplication"/>
+          <include name="loginTest5"/>
           <include name="loginTest4"/>
+          <include name="loginTest6"/>
         </methods>
       </class> <!-- Test.newTest2 -->
-      <class name="Test.newTest">
-        <methods>
-          <include name="loginTest2"/>
-          <include name="tearDown"/>
-          <include name="loginTest1"/>
-          <include name="LaunchApplication"/>
-        </methods>
-      </class> <!-- Test.newTest -->
-      <class name="Test.DataGettingFrom_Excel">
-        <methods>
-          <include name="login6"/>
-        </methods>
-      </class> <!-- Test.DataGettingFrom_Excel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

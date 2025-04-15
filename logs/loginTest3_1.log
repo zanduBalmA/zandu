@@ -758,3 +758,28 @@
 ************** Execution Started : loginTest3**************
 
 [INFO ] 2025-04-11 16:23:05.917 - Test.newTest2:loginTest3 26==>  Test3
+[INFO ] 2025-04-14 16:15:27.903 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-14 16:15:27.912 - Test.newTest2:loginTest3 26==>  Test3
+[INFO ] 2025-04-14 16:29:58.021 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-14 16:29:58.036 - Test.newTest2:loginTest3 28==>  Test3 - Starting user registration test
+[INFO ] 2025-04-14 16:52:20.864 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-14 16:52:20.898 - Test.newTest2:loginTest3 28==>  Test3 - Starting user registration test
+[INFO ] 2025-04-14 17:17:25.355 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-14 17:17:25.400 - Test.newTest2:loginTest3 27==>  loginTest3 - Starting user registration
+[INFO ] 2025-04-14 17:43:05.740 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest3**************
+
+[INFO ] 2025-04-14 17:43:05.782 - Test.newTest2:loginTest3 27==>  loginTest3 - Starting user registration

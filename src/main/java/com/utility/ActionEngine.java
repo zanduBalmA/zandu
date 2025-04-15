@@ -1,13 +1,15 @@
 package com.utility;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.StringUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -19,285 +21,219 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.Markup;
 import com.testBase.DriverFactory;
 import com.testBase.ExtentFactory;
 
 public class ActionEngine {
 
-	//Customized sendkeys method-> To log sendkeys message for every occ.
-	public void sendKeys_custom(WebElement element, String fieldName, String valueToBeSent) throws Exception {
-		try {
-//	WebDriverWait wait =new WebDriverWait(DriverFactory.getInstance().getDriver(), Duration.ofSeconds(10));
-	waitForElement(element,20);
-	     isElementPresent_custom(element, fieldName);
-			element.sendKeys(valueToBeSent);
-			//log success message in exgent report
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:green'>" + fieldName+"==> Ented value as: "+valueToBeSent+ "</span></b>");
-		} catch (Exception e) {
-			//log failure in extent
-		//logEventToReport(DriverFactory.getInstance().getDriver(), "FAIL", "<b><span style='color:red'>"+"Value enter in field: "+fieldName + " is failed due to exception: "+e+ "</span></b>");
-		ExtentFactory.getInstance().getExtent().log(Status.FAIL, "<b><span style='color:red'>"+"Value enter in field: "+fieldName + " is failed due to exception: "+e+ "</span></b>");
+	private final String COLOR_PASS = "#28a745"; // Green
+	private final String COLOR_FAIL = "#dc3545"; // Red
+	private final String COLOR_INFO = "#17a2b8"; // Blue
+	private final String COLOR_EXPECTED = "#6610f2"; // Indigo
+	private final String COLOR_ACTUAL = "#fd7e14"; // Orange
+	private final String FONT_STYLE = "font-family:Arial, sans-serif;font-size:14px;";
+
+	private final int TIMEOUT = Integer.parseInt(getConfig("element.wait.timeout", "20"));
+
+	private static String getConfig(String key, String defaultValue) {
+		try (FileInputStream fis = new FileInputStream("config.properties")) {
+			Properties prop = new Properties();
+			prop.load(fis);
+			return prop.getProperty(key, defaultValue);
+		} catch (IOException e) {
+			return defaultValue;
 		}
 	}
 
-
-	//custom click method to log evey click action in to extent report
-	public void click_custom(WebElement element, String fieldName) throws Exception {
-	//	boolean flag = false;
+	public void sendKeys_custom(WebElement element, String fieldName, String valueToBeSent) throws IOException {
 		try {
-		
-			element.click();
-			//log success message in exgent report
-			logEventInfoToReportForTestSteps(DriverFactory.getInstance().getDriver(), "pass", fieldName);
-			
-			//	flag = true;
-		} catch (Exception e) {
-			//log failure in extent
-			logEventInfoToReportForTestSteps(DriverFactory.getInstance().getDriver(), "fail", fieldName);
-			
-		//	flag = false;
-		}
-	}
-
-
-	//clear data from field
-	public void clear_custom(WebElement element,String fieldName) {
-		try {
+			waitForElement(element, TIMEOUT);
 			element.clear();
-			Thread.sleep(250);
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Data Cleared Successfully! ");
+			element.sendKeys(valueToBeSent);
+			log(Status.PASS, "<b>" + fieldName + "</b> => Value entered: <i>" + valueToBeSent + "</i>");
 		} catch (Exception e) {
-			ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Unable to clear Data on field: " +fieldName +" due to exception: "+e);
-
-		} 
-	}
-
-	//custom mouseHover 
-	public void moveToElement_custom(WebElement element,String fieldName){
-		try{
-			JavascriptExecutor executor = (JavascriptExecutor) DriverFactory.getInstance().getDriver();
-			executor.executeScript("arguments[0].scrollIntoView(true);", element);
-			Actions actions = new Actions(DriverFactory.getInstance().getDriver());		
-			actions.moveToElement(element).build().perform();
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Mouse hovered Successfully! ");
-			Thread.sleep(1000);
-		}catch(Exception e){
-			ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Unable to hover mouse on field: " +fieldName +" due to exception: "+e);
-
+			reportFailure("<b>" + fieldName + "</b> => Failed to enter value: " + e.getMessage(), true);
 		}
 	}
 
 
-	//check if element is Present
-	public boolean isElementPresent_custom(WebElement element,String fieldName){
-		boolean flag = false;
+	public void click_custom(WebElement element, String fieldName) throws IOException {
 		try {
-			flag = element.isDisplayed();
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Presence of field is: "+ flag);
-			return flag;
+			waitForElement(element, TIMEOUT);
+			element.click();
+			log(Status.PASS, "<b>Clicked on:</b> " + fieldName);
 		} catch (Exception e) {
-			ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Checking for presence of field: " +fieldName +" not tested due to exception: "+e);
-			return flag;
+			reportFailure("Click failed on: <b>" + fieldName + "</b> due to: " + e.getMessage(), true);
 		}
 	}
 
-
-	//Select dropdown value value by visibleText
-	public void selectDropDownByVisibleText_custom(WebElement element, String fieldName, String ddVisibleText) throws Throwable {
+	public void clickWithJS_custom(WebElement element, String fieldName) throws IOException {
 		try {
-			Select s = new Select(element);
-			s.selectByVisibleText(ddVisibleText);
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Dropdown Value Selected by visible text: "+ ddVisibleText);
+			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstance().getDriver();
+			js.executeScript("arguments[0].click();", element);
+			log(Status.PASS, "<b>JS Clicked on:</b> " + fieldName);
 		} catch (Exception e) {
-			ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Dropdown value not selected for field: " +fieldName +"  due to exception: "+e);
+			reportFailure("JS Click failed on: <b>" + fieldName + "</b> due to: " + e.getMessage(), true);
 		}
 	}
 
-	//Select dropdown value value by value
-	public void selectDropDownByValue_custom(WebElement element, String fieldName, String ddValue) throws Throwable {
+	public void moveToElement_custom(WebElement element, String fieldName) throws IOException {
 		try {
-			Select s = new Select(element);
-			s.selectByValue(ddValue);
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Dropdown Value Selected by visible text: "+ ddValue);
+			JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getInstance().getDriver();
+			js.executeScript("arguments[0].scrollIntoView(true);", element);
+			Actions actions = new Actions(DriverFactory.getInstance().getDriver());
+			actions.moveToElement(element).perform();
+			log(Status.PASS, "<b>Hovered over:</b> " + fieldName);
 		} catch (Exception e) {
-			ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Dropdown value not selected for field: " +fieldName +"  due to exception: "+e);
+			reportFailure("Hover failed on: <b>" + fieldName + "</b> due to: " + e.getMessage(), true);
 		}
 	}
 
-	//String Asserts
-	public void assertEqualsString_custom(String expvalue, String actualValue, String locatorName) throws Throwable {
-		try {String expected = expvalue.replaceAll("\\n"," ");
-		     String actual = actualValue.replaceAll("\\n"," ");
-		Assert.assertEquals(expected.trim(),actual.trim());
-			if(actual.equals(expected)) {
-				ExtentFactory.getInstance().getExtent().log(Status.PASS, "String Assertion is successful on field "+ locatorName + " Expected value was: "+ expected + " actual value is: "+actual);
-			}else {
-				ExtentFactory.getInstance().getExtent().log(Status.FAIL, "String Assertion FAILED on field "+ locatorName + " Expected value was: "+ expected + " actual value is: "+actual);
-				Assert.assertTrue(false);
-			}
-		} catch (Exception e) {
-			Assert.assertTrue(false, e.toString());
-		}
-	}
-
-	//Get text from webelement
-	public String getText_custom(WebElement element, String fieldName) {
-		String text = "";
+	public void selectDropdownByVisibleText_custom(WebElement element, String fieldName, String visibleText) throws IOException {
 		try {
-			text = element.getText();
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, fieldName+"==> Text retried is: "+ text);
-			return text;
-		} catch (Exception e) {		
-			ExtentFactory.getInstance().getExtent().log(Status.FAIL, fieldName+"==> Text not retried due to exception: "+ e);
-
-		}
-		return text;
-	}
-
-	
-	
-	public synchronized void logEventToReport(WebDriver d, String status, String description) throws Exception {
-		try {
-			if (status.equalsIgnoreCase("pass")) {
-				ExtentFactory.getInstance().getExtent().log(Status.PASS,
-						"<b><span style='color:green'>" + StringUtils.capitalize(description) + "</span></b>");
-			} else if (status.equalsIgnoreCase("fail")) {
-				ExtentFactory.getInstance().getExtent().log(Status.FAIL,
-						"<b><span style='color:red'>" + StringUtils.capitalize(description) + "</span></b>");
-				ExtentFactory.getInstance().getExtent().log(Status.INFO ,"<b><span style='color:orange'>"+
-						  ExtentFactory.getInstance().getExtent().addScreenCaptureFromPath(addScreenShot())+ "</span></b>");
-			} else if (status.equalsIgnoreCase("WARNING")) {
-				ExtentFactory.getInstance().getExtent().log(Status.WARNING,"<b><span style='color:pink'>"+ description+"</span></b>");
-				
-				ExtentFactory.getInstance().getExtent().log(Status.INFO ,
-						(Markup) ExtentFactory.getInstance().getExtent().addScreenCaptureFromPath(addScreenShot()));
-
-
-			}
+			waitForElement(element, TIMEOUT);
+			Select select = new Select(element);
+			select.selectByVisibleText(visibleText);
+			log(Status.PASS, "<b>" + fieldName + "</b> => Selected value: <i>" + visibleText + "</i>");
 		} catch (Exception e) {
-			System.out.println("error block report");
-			ExtentFactory.getInstance().getExtent().log(Status.INFO, e.getMessage());
-			ExtentFactory.getInstance().getExtent().addScreenCaptureFromPath(addScreenShot(), "Test case INFO screenshot");
-
-			e.printStackTrace();
+			reportFailure("<b>" + fieldName + "</b> => Dropdown selection failed: " + e.getMessage(), true);
 		}
 	}
-public String addScreenShot()
-{
-	File src = ((TakesScreenshot)DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
-	SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyy HH-mm-ss");
-	Date date = new Date();
-	String actualDate = format.format(date);
-	
-	String screenshotPath = System.getProperty("user.dir")+
-			"/Reports/Screenshots/"+actualDate+".png";
-	File dest = new File(screenshotPath);
-	
-	try {
-		FileUtils.copyFile(src, dest);
-	} catch (IOException e) {
-		e.printStackTrace();
-	}	
-	return  dest.toString();
-}
-public void waitForElement(WebElement element , int i) {
-	WebDriverWait wait = new WebDriverWait(DriverFactory.getInstance().getDriver(),Duration.ofSeconds(i) );
-	wait.until(ExpectedConditions.visibilityOf(element));
-}
 
-protected boolean isElementPresent(WebElement element) throws Exception {
-	boolean flag = false;
-	try {
-		
-		waitForElement(element,20);
-		element.isDisplayed();
-		logEventToReport(DriverFactory.getInstance().getDriver(), "pass",  " "+element+" is presented");
-		flag = true;
+	public void verifyElementText_custom(WebElement element, String expectedText, String fieldName) throws IOException { 
+	    String actualText = "";  // Declare actualText at the start to ensure it is always initialized.
+	    try {
+	        // Wait for the element to be visible before proceeding
+	        waitForElement(element, TIMEOUT);
 
-	} catch (Exception e) {
-	  logEventToReport(DriverFactory.getInstance().getDriver(), "error",  ""+element+""+e.getMessage());
-		throw new Exception("Unable to determine if the element is present.", e);
+	        // Get and clean actual text from the element
+	        actualText = element.getText().trim().replaceAll("\\n", " ");
+	        
+	        // Clean expected text (to handle multiple new lines or spaces)
+	        String expected = expectedText.trim().replaceAll("\\n", " ");
+
+	        // Assertion to check if the actual text equals the expected text
+	        Assert.assertEquals(actualText, expected, fieldName + " => Text mismatch.");
+
+	        // Log success if assertion passes
+	        logPassWithScreenshot(String.format("<b>%s</b> => Text matched. <br><span style='color:%s;'>Expected:</span> <i>%s</i><br><span style='color:%s;'>Actual:</span> <i>%s</i>",
+	                fieldName, COLOR_EXPECTED, expected, COLOR_ACTUAL, actualText));
+
+	    } catch (AssertionError e) {
+	        // Catch assertion error and log failure with detailed mismatch
+	        actualText = actualText.isEmpty() ? "N/A" : actualText; // Set a default value if actualText is empty
+	        reportFailure(String.format("<b>%s</b> => Text mismatch. <br><span style='color:%s;'>Expected:</span> <i>%s</i><br><span style='color:%s;'>Actual:</span> <i>%s</i>",
+	                fieldName, COLOR_EXPECTED, expectedText, COLOR_ACTUAL, actualText), true);
+	    } catch (Exception e) {
+	        // Catch any other exceptions and log the failure with exception details
+	        reportFailure(String.format("<b>%s</b> => Verification failed: %s", fieldName, e.getMessage()), true);
+	    }
 	}
-	return flag;
-}
 
-public String getcharacterString(int n) 
-{ 
 
-    // chose a Character random from this String 
-    String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            + "abcdefghijklmnopqrstuvxyz";; 
-
-    // create StringBuffer size of AlphaNumericString 
-    StringBuilder sb = new StringBuilder(n); 
-
-    for (int i = 0; i < n; i++) { 
-
-        // generate a random number between 
-        // 0 to AlphaNumericString variable length 
-        int index 
-            = (int)(AlphaNumericString.length() 
-                    * Math.random()); 
-
-        // add Character one by one in end of sb 
-        sb.append(AlphaNumericString 
-                      .charAt(index)); 
-    } 
-
-    return sb.toString(); 
-}
-public String getAlphaNumericString(int n) 
-{ 
-
-    // chose a Character random from this String 
-    String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                + "0123456789"
-                                + "abcdefghijklmnopqrstuvxyz"; 
-
-    // create StringBuffer size of AlphaNumericString 
-    StringBuilder sb = new StringBuilder(n); 
-
-    for (int i = 0; i < n; i++) { 
-
-        // generate a random number between 
-        // 0 to AlphaNumericString variable length 
-        int index 
-            = (int)(AlphaNumericString.length() 
-                    * Math.random()); 
-
-        // add Character one by one in end of sb 
-        sb.append(AlphaNumericString 
-                      .charAt(index)); 
-    } 
-
-    return sb.toString(); 
-}
-
-public static void logEventInfoToReportForTestSteps(WebDriver d, String status, String description)
-		throws Exception {
-	if (status.equalsIgnoreCase("pass")) {
+	public void logPassWithScreenshot(String message) throws IOException {
 		ExtentFactory.getInstance().getExtent().log(Status.PASS,
-				"<b><span style='color:Green'>" + StringUtils.capitalize(description) + "</span></b>");
-		
-	} else if (status.equalsIgnoreCase("fail")) {
-		ExtentFactory.getInstance().getExtent().log(Status.FAIL,
-				"<b><span style='color:red'>" + StringUtils.capitalize(description) + "</span></b>");
-		
-      
+				"<div style='" + FONT_STYLE + "color:" + COLOR_PASS + ";'>" + message + "</div>",
+				MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot()).build());
 	}
-}
 
-public String addScreenshot(){
-File src = ((TakesScreenshot)DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
-SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyy HH-mm-ss");
-Date date = new Date();
-String actualDate = format.format(date);
+	public String getAlphaNumericString(int length) {
+		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvxyz";
+		return generateRandomString(chars, length);
+	}
 
-String screenshotPath = System.getProperty("user.dir")+
-		"/Reports/Screenshots/"+actualDate+"image"+".png";
-File dest = new File(screenshotPath);
-return screenshotPath;
-}
+	public String getCharacterString(int length) {
+		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz";
+		return generateRandomString(chars, length);
+	}
+
+	private String generateRandomString(String chars, int length) {
+		StringBuilder sb = new StringBuilder(length);
+		for (int i = 0; i < length; i++) {
+			int index = (int) (Math.random() * chars.length());
+			sb.append(chars.charAt(index));
+		}
+		return sb.toString();
+	}
+
+	public boolean isElementPresent_custom(WebElement element, String fieldName) throws IOException {
+		try {
+			boolean displayed = element.isDisplayed();
+			log(Status.PASS, "<b>" + fieldName + "</b> ==> Element presence: <i>" + displayed + "</i>");
+			return displayed;
+		} catch (Exception e) {
+			reportFailure("<b>" + fieldName + "</b> ==> Presence check failed: " + e.getMessage(), true);
+			return false;
+		}
+	}
+
+	private void reportFailure(String message, boolean withScreenshot) throws IOException {
+		if (withScreenshot) {
+			ExtentFactory.getInstance().getExtent().log(Status.FAIL,
+					"<div style='" + FONT_STYLE + "color:" + COLOR_FAIL + ";'>" + message + "</div>",
+					MediaEntityBuilder.createScreenCaptureFromPath(captureScreenshot()).build());
+		} else {
+			ExtentFactory.getInstance().getExtent().log(Status.FAIL,
+					"<div style='" + FONT_STYLE + "color:" + COLOR_FAIL + ";'>" + message + "</div>");
+		}
+		Assert.fail(message);
+	}
+
+	private String captureScreenshot() {
+		try {
+			File src = ((TakesScreenshot) DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
+			String timestamp = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss").format(new Date());
+			String path = System.getProperty("user.dir") + "/Reports/Screenshots/" + timestamp + ".png";
+			FileUtils.copyFile(src, new File(path));
+			return path;
+		} catch (IOException e) {
+			return "Screenshot capture failed: " + e.getMessage();
+		}
+	}
+	
+	
+	protected void waitForElement(WebElement element, int timeoutInSeconds) throws IOException {
+		
+		 WebDriver driver = DriverFactory.getInstance().getDriver();
+		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+		try {
+	        // Wait until the element is visible
+	        wait.until(ExpectedConditions.visibilityOf(element));
+	        log(Status.INFO, "<b>" + element + "</b> ➜ Element is visible after waiting up to " + timeoutInSeconds + " seconds.");
+	    } catch (Exception e) {
+	        String errorMessage = "<b>" + element + "</b> ➜ Element not visible within " + timeoutInSeconds + " seconds. Exception: <i>" + e.getMessage() + "</i>";
+	        reportFailure(errorMessage, true);
+	    }
+	}
+	
+	
+
+	private void waitForElementPresence(WebElement element, int seconds) {
+		WebDriver driver = DriverFactory.getInstance().getDriver();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+		String locatorId = element.getAttribute("id");
+		if (locatorId != null && !locatorId.isEmpty()) {
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.id(locatorId)));
+		}
+	}
+
+	private void log(Status status, String message) {
+		ExtentFactory.getInstance().getExtent().log(status,
+				"<div style='" + FONT_STYLE + "color:" + getColorByStatus(status) + ";'>" + message + "</div>");
+	}
+
+	private String getColorByStatus(Status status) {
+		switch (status) {
+			case PASS:
+				return COLOR_PASS;
+			case FAIL:
+				return COLOR_FAIL;
+			case INFO:
+				return COLOR_INFO;
+			default:
+				return "#000000";
+		}
+	}
 }

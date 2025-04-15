@@ -6,17 +6,11 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="Test.newTest2">
-        <methods>
-          <include name="tearDown"/>
-          <include name="loginTest3">
-            <parameter name="testcaseid" value="3"/>
-          </include> <!-- loginTest3 -->
-          <include name="LaunchApplication"/>
-        </methods>
-      </class> <!-- Test.newTest2 -->
       <class name="Test.newTest">
         <methods>
+          <include name="loginTest2">
+            <parameter name="testcaseid" value="2"/>
+          </include> <!-- loginTest2 -->
           <include name="tearDown"/>
           <include name="loginTest1">
             <parameter name="testcaseid" value="1"/>

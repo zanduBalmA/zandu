@@ -43,7 +43,7 @@ public class Loginpage extends ActionEngine {
 	@FindBy(xpath = "//input[@id='customer.username']")
 	private WebElement userName;
 	@FindBy(xpath = "//input[@id='customer.password']")
-	private WebElement password;
+	private WebElement passwordold;
 	@FindBy(xpath = "//input[@id='repeatedPassword']")
 	private WebElement conformPassword;
 	@FindBy(xpath = "//input[@value='Register']")
@@ -100,7 +100,7 @@ public class Loginpage extends ActionEngine {
 	}
 
 	public void creatpassword() {
-		password.sendKeys("raju123");
+		passwordold.sendKeys("raju123");
 	}
 
 	public void enterconformPassword() {
@@ -123,99 +123,101 @@ public class Loginpage extends ActionEngine {
 		phoneNumber.sendKeys(phoneNumbers);
 		ssn.sendKeys(ssns);
 		userName.sendKeys(userNames);
-		password.sendKeys(passwords);
+		passwordold.sendKeys(passwords);
 		conformPassword.sendKeys(conformPasswords);
 		proced.click();
 	}
-
 	public void ragisterNewUser(String name, String LastName, String add, String cityName, String stateName,
-			String code, String number, String ssnCode, String uname, String pass, String cPassword) throws Throwable {
-		// ragister.click();
-		try {
-			click_custom(ragister, "Ragister");
-			String names = getcharacterString(5);
-			System.out.println(names);
-			String lName = getcharacterString(5);
-			System.out.println(lName);
-			String uName = getAlphaNumericString(8);
-			System.out.println(uName);
-			String passw = getAlphaNumericString(8);
-			System.out.println(passw);
-			sendKeys_custom(fname, "FirstName", names);
-			sendKeys_custom(lname, "LastName", lName);
-			sendKeys_custom(address, "LastName", add);
-			sendKeys_custom(city, "City", cityName);
-			sendKeys_custom(state, "State", stateName);
-			Thread.sleep(1000);
-			sendKeys_custom(zipcode, "ZipCode", code);
-			sendKeys_custom(phoneNumber, "Phone Number", number);
-			sendKeys_custom(ssn, "SSN", ssnCode);
-			sendKeys_custom(userName, "UserName", uName);
-			sendKeys_custom(password, "Password", passw);
-			sendKeys_custom(conformPassword, "conformPassword", passw);
-			Thread.sleep(1000);
-			click_custom(proced, "Proced");
-			waitForElement(message__sucess, 20);
-			getText_custom(message__sucess, "sucessful Registeration");
-			assertEqualsString_custom(
-					"Welcome " + uName + " Your account was created successfully. You are now logged in.",
-					getText_custom(message__sucess, "sucessful Registeration"), "sucess message");
-			// Your account was created successfully. You are now logged in.
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:Blue'></span></b>");
-		} catch (Exception e) {
-			// log failure in extent
-			// logEventToReport(DriverFactory.getInstance().getDriver(), "FAIL", "<b><span
-			// style='color:red'>"+"Value enter in field: "+fieldName + " is failed due to
-			// exception: "+e+ "</span></b>");
-			ExtentFactory.getInstance().getExtent().log(Status.FAIL, "<b><span style='color:red'></span></b>");
-		}
+	        String code, String number, String ssnCode, String uname, String pass, String cPassword) throws Throwable {
+	    try {
+	        click_custom(ragister, "Ragister");
 
+	        String names = getCharacterString(5);
+	        String lName = getCharacterString(5);
+	        String uName = getAlphaNumericString(8);
+	        String passw = getAlphaNumericString(8);
+
+	        System.out.println(names);
+	        System.out.println(lName);
+	        System.out.println(uName);
+	        System.out.println(passw);
+
+	        sendKeys_custom(fname, "FirstName", names);
+	        sendKeys_custom(lname, "LastName", lName);
+	        sendKeys_custom(address, "Address", add);
+	        sendKeys_custom(city, "City", cityName);
+	        sendKeys_custom(state, "State", stateName);
+	        Thread.sleep(1000);
+	        sendKeys_custom(zipcode, "ZipCode", code);
+	        sendKeys_custom(phoneNumber, "Phone Number", number);
+	        sendKeys_custom(ssn, "SSN", ssnCode);
+	        sendKeys_custom(userName, "UserName", uName);
+	        sendKeys_custom(passwordold, "Password", passw);
+	        sendKeys_custom(conformPassword, "conformPassword", passw);
+	        Thread.sleep(1000);
+	        click_custom(proced, "Proced");
+
+	        waitForElement(message__sucess, 20);
+	        
+	        // Verify registration success
+	        String expectedMessage = "Welcome " + uName + " Your account was created successfully. You are now logged in.";
+	        verifyElementText_custom(message__sucess, expectedMessage, "Success Message");
+
+	        ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:#AAFF00'>User registration successful</span></b>");
+
+	        ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:#AAFF00'>Test Passed</span></b>");
+	    } catch (Exception e) {
+	        ExtentFactory.getInstance().getExtent().log(Status.FAIL, 
+	            "<b><span style='color:red'>Exception occurred: " + e.getMessage() + "</span></b>");
+	    }
 	}
 
-	public void ragisterNewUserS(String name, String LastName, String add, String cityName, String stateName,
-			String code, String number, String ssnCode, String uname, String pass, String cPassword) throws Throwable {
-		// ragister.click();
-		try {
-			click_custom(ragister, "Ragister");
-			String names = getcharacterString(5);
-			System.out.println(names);
-			String lName = getcharacterString(5);
-			System.out.println(lName);
-			String uName = getAlphaNumericString(8);
-			System.out.println(uName);
-			String passw = getAlphaNumericString(8);
-			System.out.println(passw);
-			sendKeys_custom(fname, "FirstName", names);
-			sendKeys_custom(lname, "LastName", lName);
-			sendKeys_custom(address, "LastName", add);
-			sendKeys_custom(city, "City", cityName);
-			sendKeys_custom(state, "State", stateName);
-			Thread.sleep(1000);
-			sendKeys_custom(zipcode, "ZipCode", code);
-			sendKeys_custom(phoneNumber, "Phone Number", number);
-			sendKeys_custom(ssn, "SSN", ssnCode);
-			sendKeys_custom(userName, "UserName", uName);
-			sendKeys_custom(password, "Password", passw);
-			sendKeys_custom(conformPassword, "conformPassword", passw);
-			Thread.sleep(1000);
-			click_custom(proced, "Proced");
-			waitForElement(message__sucess, 20);
-			getText_custom(message__sucess, "sucessful Registeration");
-			assertEqualsString_custom(
-					"Welcome " + uName + " Your account was created successfully. You are now logged in.",
-					getText_custom(message__sucess, "sucessful Registeration"), "sucess message");
-			// Your account was created successfully. You are now logged in.
-			ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:Blue'></span></b>");
-		} catch (Exception e) {
-			// log failure in extent
-			// logEventToReport(DriverFactory.getInstance().getDriver(), "FAIL", "<b><span
-			// style='color:red'>"+"Value enter in field: "+fieldName + " is failed due to
-			// exception: "+e+ "</span></b>");
-			ExtentFactory.getInstance().getExtent().log(Status.FAIL, "<b><span style='color:red'></span></b>");
-		
-		}
+	
 
-	}
+	public void ragisterNewUserS(String name, String lastName, String add, String cityName, String stateName,
+            String code, String number, String ssnCode, String uname, String pass, String cPassword) throws Throwable {
+try {
+ExtentFactory.getInstance().getExtent().log(Status.INFO, "<b>Starting User Registration</b>");
+
+click_custom(ragister, "Register");
+
+// Generate random values if needed
+String firstName = getCharacterString(5);
+String lastNameGen = getCharacterString(5);
+String username = getAlphaNumericString(8);
+String password = getAlphaNumericString(8);
+
+sendKeys_custom(fname, "First Name", firstName);
+sendKeys_custom(lname, "Last Name", lastNameGen);
+sendKeys_custom(address, "Address", add);
+sendKeys_custom(city, "City", cityName);
+sendKeys_custom(state, "State", stateName);
+sendKeys_custom(zipcode, "Zip Code", code);
+sendKeys_custom(phoneNumber, "Phone Number", number);
+sendKeys_custom(ssn, "SSN", ssnCode);
+sendKeys_custom(userName, "Username", username);
+sendKeys_custom(passwordold, "Password", password);
+sendKeys_custom(conformPassword, "Confirm Password", password);
+
+Thread.sleep(1000);
+
+click_custom(proced, "Proceed");
+waitForElement(message__sucess, 20);
+
+String expectedMessage = "Welcome " + username + " Your account was created successfully. You are now logged in.";
+verifyElementText_custom(message__sucess, expectedMessage, "Success Message");
+
+ExtentFactory.getInstance().getExtent().log(Status.PASS,
+"<b><span style='color:#AAFF00'>User registration successful</span></b>");
+
+} catch (Exception e) {
+ExtentFactory.getInstance().getExtent().log(Status.FAIL,
+"<b><span style='color:#FF5733'>User registration failed: " + e.getMessage() + "</span></b>");
+throw e; // Important for retry/reporting
+}
+}
+	
+
 
 	public void enteruserName() {
 //		WebDriverWait wait=new WebDriverWait(20,TimeUnit.SECONDS);

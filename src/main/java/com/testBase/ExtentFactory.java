@@ -46,38 +46,7 @@ public class ExtentFactory {
 		extent.remove();
 	}
 	
-	public String captureScreen(WebDriver driver,String  screenshotPath) {
-		try {
-			File src = ((TakesScreenshot)DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
-		SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyy HH-mm-ss");
-			Date date = new Date();
-			String actualDate = format.format(date);
-		
-			File dest = new File(screenshotPath);
-			
-			
-				FileUtils.copyFile(src, dest);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		return screenshotPath;
-	}
-
-	public String addScreenShot(WebDriver d, String screenshotPath) throws Exception {
-		String image = "";
-		FileInputStream imageFile;
-		try {
-			File imgfile = new File(captureScreen(d, screenshotPath));
-			imageFile = new FileInputStream(screenshotPath);
-			byte imageData[] = new byte[(int) imgfile.length()];
-			imageFile.read(imageData);
-			byte[] base64EncodedByteArray = org.apache.commons.codec.binary.Base64.encodeBase64(imageData);
-			image = new String(base64EncodedByteArray);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return "data:image/png;base64," + image;
-	}
+	
 
 	
 	
