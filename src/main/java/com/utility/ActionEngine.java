@@ -181,7 +181,7 @@ public class ActionEngine {
 		Assert.fail(message);
 	}
 
-	private String captureScreenshot() {
+	private String captureScreenshotold() {
 		try {
 			File src = ((TakesScreenshot) DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
 			String timestamp = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss").format(new Date());
@@ -192,7 +192,28 @@ public class ActionEngine {
 			return "Screenshot capture failed: " + e.getMessage();
 		}
 	}
-	
+	private String captureScreenshot() {
+	    try {
+	        // Take screenshot
+	        File src = ((TakesScreenshot) DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
+
+	        // Generate timestamped filename
+	        String timestamp = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss").format(new Date());
+	        String screenshotName = timestamp + ".png";
+
+	        // Save in Jenkins-friendly location (inside test-output or Reports folder)
+	        String relativePath = "Reports/Screenshots/" + screenshotName;
+	        String fullPath = System.getProperty("user.dir") + "/" + relativePath;
+
+	        FileUtils.copyFile(src, new File(fullPath));
+
+	        // Return relative path for Extent report
+	        return relativePath;
+	    } catch (IOException e) {
+	        return "Screenshot capture failed: " + e.getMessage();
+	    }
+	}
+
 	
 	protected void waitForElement(WebElement element, int timeoutInSeconds) throws IOException {
 		
