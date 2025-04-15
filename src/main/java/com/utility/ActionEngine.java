@@ -201,18 +201,23 @@ public class ActionEngine {
 	        String timestamp = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss").format(new Date());
 	        String screenshotName = timestamp + ".png";
 
-	        // Save in Jenkins-friendly location (inside test-output or Reports folder)
+	        // Build paths
 	        String relativePath = "Reports/Screenshots/" + screenshotName;
 	        String fullPath = System.getProperty("user.dir") + "/" + relativePath;
 
+	        // Ensure directory exists
+	        new File(System.getProperty("user.dir") + "/Reports/Screenshots").mkdirs();
+
+	        // Save file
 	        FileUtils.copyFile(src, new File(fullPath));
 
-	        // Return relative path for Extent report
+	        // Return path for report
 	        return relativePath;
 	    } catch (IOException e) {
 	        return "Screenshot capture failed: " + e.getMessage();
 	    }
 	}
+
 
 	
 	protected void waitForElement(WebElement element, int timeoutInSeconds) throws IOException {
