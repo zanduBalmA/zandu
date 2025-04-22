@@ -199,9 +199,12 @@ public class ActionEngine {
 	        String timestamp = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss").format(new Date());
 	        String screenshotDir = System.getProperty("user.dir") + "/Reports/Screenshots";
 	        new File(screenshotDir).mkdirs(); // Ensure folder exists
-	        String path = screenshotDir + "/" + timestamp + ".png";
-	        FileUtils.copyFile(src, new File(path));
-	        return path;
+	        String screenshotPath = screenshotDir + "/" + timestamp + ".png";
+	        FileUtils.copyFile(src, new File(screenshotPath));
+	        
+	        // Return relative path from the HTML report's perspective
+	        return "Screenshots/" + timestamp + ".png";
+	        
 	    } catch (IOException e) {
 	        return "Screenshot capture failed: " + e.getMessage();
 	    }
