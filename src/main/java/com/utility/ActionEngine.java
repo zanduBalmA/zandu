@@ -27,7 +27,7 @@ import com.testBase.DriverFactory;
 import com.testBase.ExtentFactory;
 
 public class ActionEngine {
-
+//utility for reused
 	private final String COLOR_PASS = "#28a745"; // Green
 	private final String COLOR_FAIL = "#dc3545"; // Red
 	private final String COLOR_INFO = "#17a2b8"; // Blue
