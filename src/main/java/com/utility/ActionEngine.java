@@ -181,7 +181,7 @@ public class ActionEngine {
 		Assert.fail(message);
 	}
 
-	private String captureScreenshot() {
+	private String captureScreenshotold() {
 		try {
 			File src = ((TakesScreenshot) DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
 			String timestamp = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss").format(new Date());
@@ -193,6 +193,20 @@ public class ActionEngine {
 		}
 	}
 	
+	private String captureScreenshot() {
+	    try {
+	        File src = ((TakesScreenshot) DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
+	        String timestamp = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss").format(new Date());
+	        String screenshotDir = System.getProperty("user.dir") + "/Reports/Screenshots";
+	        new File(screenshotDir).mkdirs(); // Ensure folder exists
+	        String path = screenshotDir + "/" + timestamp + ".png";
+	        FileUtils.copyFile(src, new File(path));
+	        return path;
+	    } catch (IOException e) {
+	        return "Screenshot capture failed: " + e.getMessage();
+	    }
+	}
+
 
 
 	
