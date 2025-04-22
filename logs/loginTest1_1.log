@@ -976,3 +976,8 @@
 ************** Execution Started : loginTest1**************
 
 [INFO ] 2025-04-22 15:55:51.006 - Test.newTest:loginTest1 28==>  loginTest1 - User registration completed for: Raju
+[INFO ] 2025-04-22 16:30:11.510 - com.testBase.MyLogger:startTestCase 17==>  
+
+************** Execution Started : loginTest1**************
+
+[INFO ] 2025-04-22 16:30:17.234 - Test.newTest:loginTest1 28==>  loginTest1 - User registration completed for: Raju
