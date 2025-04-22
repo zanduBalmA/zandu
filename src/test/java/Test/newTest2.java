@@ -144,7 +144,7 @@ public class newTest2 extends TestBase {
             );
 
             ExtentFactory.getInstance().getExtent().log(Status.PASS,
-                "<b><span style='color:green'>loginTest6 Passed: User registered successfully.</span></b>");
+                "<b><span style='color:green'>loginTest6 Passed: User"+ getData(dat, "name")+" registered successfully.</span></b>");
         } catch (Exception e) {
             ExtentFactory.getInstance().getExtent().log(Status.FAIL,
                 "<b><span style='color:red'>loginTest6 Failed: " + e.getMessage() + "</span></b>");

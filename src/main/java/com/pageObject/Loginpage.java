@@ -157,7 +157,7 @@ public class Loginpage extends ActionEngine {
 	        Thread.sleep(1000);
 	        click_custom(proced, "Proced");
 
-	        waitForElement(message__sucess, 20);
+	        waitForElementPresence(message__sucess,20);
 	        
 	        // Verify registration success
 	        String expectedMessage = "Welcome " + uName + " Your account was created successfully. You are now logged in.";
@@ -165,7 +165,7 @@ public class Loginpage extends ActionEngine {
 
 	        ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:#AAFF00'>User registration successful</span></b>");
 
-	        ExtentFactory.getInstance().getExtent().log(Status.PASS, "<b><span style='color:#AAFF00'>Test Passed</span></b>");
+	       
 	    } catch (Exception e) {
 	        ExtentFactory.getInstance().getExtent().log(Status.FAIL, 
 	            "<b><span style='color:red'>Exception occurred: " + e.getMessage() + "</span></b>");
@@ -202,7 +202,7 @@ sendKeys_custom(conformPassword, "Confirm Password", password);
 Thread.sleep(1000);
 
 click_custom(proced, "Proceed");
-waitForElement(message__sucess, 20);
+waitForElementPresence(message__sucess, 20);
 
 String expectedMessage = "Welcome " + username + " Your account was created successfully. You are now logged in.";
 verifyElementText_custom(message__sucess, expectedMessage, "Success Message");

@@ -49,7 +49,7 @@ public class ActionEngine {
 
 	public void sendKeys_custom(WebElement element, String fieldName, String valueToBeSent) throws IOException {
 		try {
-			waitForElement(element, TIMEOUT);
+			waitForElement(element, TIMEOUT,fieldName);
 			element.clear();
 			element.sendKeys(valueToBeSent);
 			log(Status.PASS, "<b>" + fieldName + "</b> => Value entered: <i>" + valueToBeSent + "</i>");
@@ -61,7 +61,7 @@ public class ActionEngine {
 
 	public void click_custom(WebElement element, String fieldName) throws IOException {
 		try {
-			waitForElement(element, TIMEOUT);
+			waitForElement(element, TIMEOUT,fieldName);
 			element.click();
 			log(Status.PASS, "<b>Clicked on:</b> " + fieldName);
 		} catch (Exception e) {
@@ -93,7 +93,7 @@ public class ActionEngine {
 
 	public void selectDropdownByVisibleText_custom(WebElement element, String fieldName, String visibleText) throws IOException {
 		try {
-			waitForElement(element, TIMEOUT);
+			waitForElement(element, TIMEOUT,fieldName);
 			Select select = new Select(element);
 			select.selectByVisibleText(visibleText);
 			log(Status.PASS, "<b>" + fieldName + "</b> => Selected value: <i>" + visibleText + "</i>");
@@ -106,7 +106,7 @@ public class ActionEngine {
 	    String actualText = "";  // Declare actualText at the start to ensure it is always initialized.
 	    try {
 	        // Wait for the element to be visible before proceeding
-	        waitForElement(element, TIMEOUT);
+	        waitForElement(element, TIMEOUT,fieldName);
 
 	        // Get and clean actual text from the element
 	        actualText = element.getText().trim().replaceAll("\\n", " ");
@@ -213,23 +213,23 @@ public class ActionEngine {
 
 
 	
-	protected void waitForElement(WebElement element, int timeoutInSeconds) throws IOException {
+	protected void waitForElement(WebElement element, int timeoutInSeconds, String fieldName ) throws IOException {
 		
 		 WebDriver driver = DriverFactory.getInstance().getDriver();
 		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
 		try {
 	        // Wait until the element is visible
 	        wait.until(ExpectedConditions.visibilityOf(element));
-	        log(Status.INFO, "<b>" + element + "</b> ➜ Element is visible after waiting up to " + timeoutInSeconds + " seconds.");
+	        log(Status.INFO, "<b>" + element+">>" +fieldName+ "</b> is visible after waiting up to " + timeoutInSeconds + " seconds.");
 	    } catch (Exception e) {
-	        String errorMessage = "<b>" + element + "</b> ➜ Element not visible within " + timeoutInSeconds + " seconds. Exception: <i>" + e.getMessage() + "</i>";
+	        String errorMessage = "<b>" + element +">>"+fieldName+ "</b> Element not visible within " + timeoutInSeconds + " seconds. Exception: <i>" + e.getMessage() + "</i>";
 	        reportFailure(errorMessage, true);
 	    }
 	}
 	
 	
 
-	private void waitForElementPresence(WebElement element, int seconds) {
+	public void waitForElementPresence(WebElement element, int seconds) {
 		WebDriver driver = DriverFactory.getInstance().getDriver();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
 		String locatorId = element.getAttribute("id");

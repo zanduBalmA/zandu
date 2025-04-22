@@ -49,9 +49,9 @@ public class newTest extends TestBase {
                 "8523455675", "985", "Prash", "Prasha123@", "Prasha123@"
             );
 
-            MyLogger.info("loginTest2 - User registration completed for: Prash");
+            MyLogger.info("loginTest2 - User registration completed for: Prashant");
             ExtentFactory.getInstance().getExtent().log(Status.PASS,
-                "<b><span style='color:#28a745;'>PASS: loginTest2 - User 'Prash' registered successfully.</span></b>");
+                "<b><span style='color:#28a745;'>PASS: loginTest2 - User 'Prashant' registered successfully.</span></b>");
 
         } catch (Exception e) {
             ExtentFactory.getInstance().getExtent().log(Status.FAIL,
