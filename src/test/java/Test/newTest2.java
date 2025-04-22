@@ -42,8 +42,12 @@ public class newTest2 extends TestBase {
             );
 
             ExtentFactory.getInstance().getExtent().log(Status.PASS,
-                    "<b><span style='color:green'>loginTest_3 Passed: User"+ getData(dat, "name")+" registered successfully.</span></b>");
+                    "<b><span style='color:#28a745;'>PASS: loginTest_3 Passed: User "+ getData(dat, "name")+" registered successfully.</span></b>");
+        
+        
         } catch (Exception e) {
+        	
+        	
             ExtentFactory.getInstance().getExtent().log(Status.FAIL,
                 "<b><span style='color:red'>loginTest_3 Failed: " + e.getMessage() + "</span></b>");
             throw e;
@@ -76,7 +80,7 @@ public class newTest2 extends TestBase {
             );
 
             ExtentFactory.getInstance().getExtent().log(Status.PASS,
-                    "<b><span style='color:green'>loginTest_4 Passed: User"+ getData(dat, "name")+" registered successfully.</span></b>");
+                    "<b><span style='color:#28a745;'>PASS: loginTest_4 Passed: User "+ getData(dat, "name")+" registered successfully.</span></b>");
         } catch (Exception e) {
             ExtentFactory.getInstance().getExtent().log(Status.FAIL,
                 "<b><span style='color:red'>loginTest_4 Failed: " + e.getMessage() + "</span></b>");
@@ -110,7 +114,7 @@ public class newTest2 extends TestBase {
             );
 
             ExtentFactory.getInstance().getExtent().log(Status.PASS,
-                    "<b><span style='color:green'>loginTest_5 Passed: User"+ getData(dat, "name")+" registered successfully.</span></b>");
+                    "<b><span style='color:#28a745;'>PASS: loginTest_5 Passed: User "+ getData(dat, "name")+" registered successfully.</span></b>");
         } catch (Exception e) {
             ExtentFactory.getInstance().getExtent().log(Status.FAIL,
                 "<b><span style='color:red'>loginTest_5 Failed: " + e.getMessage() + "</span></b>");
@@ -144,7 +148,7 @@ public class newTest2 extends TestBase {
             );
 
             ExtentFactory.getInstance().getExtent().log(Status.PASS,
-                "<b><span style='color:green'>loginTest_6 Passed: User"+ getData(dat, "name")+" registered successfully.</span></b>");
+                    "<b><span style='color:#28a745;'>PASS: loginTest_6 Passed: User "+ getData(dat, "name")+" registered successfully.</span></b>");
         } catch (Exception e) {
             ExtentFactory.getInstance().getExtent().log(Status.FAIL,
                 "<b><span style='color:red'>loginTest_6 Failed: " + e.getMessage() + "</span></b>");
